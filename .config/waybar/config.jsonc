@@ -7,9 +7,10 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+        "battery",
+        "power-profiles-daemon",
+	"tray",
         "hyprland/workspaces",
-        "hyprland/mode",
-        "hyprland/scratchpad",
         "custom/media"
     ],
     "modules-center": [
@@ -18,13 +19,11 @@
     "modules-right": [
         "pulseaudio",
         "network",
-        "power-profiles-daemon",
         "cpu",
         "memory",
         "temperature",
         "backlight",
         "hyprland/language",
-        "battery",
         "clock",
         "tray",
         "custom/power"
@@ -46,16 +45,6 @@
              "default": ""
          }
      },
-    "hyprland/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "hyprland/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
-    },
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
