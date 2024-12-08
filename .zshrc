@@ -90,3 +90,8 @@ alias pbrowse="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bi
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+if [[ -z "$PROFILE_SOURCED" ]]; then
+	source ~/.zprofile
+fi
+source ~/.zprofile
