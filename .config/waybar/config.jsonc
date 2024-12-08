@@ -143,8 +143,8 @@
 		"menu-actions": {
 			"shutdown": "shutdown",
 			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
+			"suspend": "hyprlock & systemctl suspend",
+			"hibernate": "hyprlock & systemctl hibernate"
 		}
     }
 }
