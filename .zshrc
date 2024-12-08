@@ -50,6 +50,17 @@ bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
 
+# Ctrl+Left and Ctrl+Right bindings to skip words
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
+
+# Beginning of sentence and end of sentence
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
+
+# Delete char
+bindkey "\E[3~" delete-char
+
 # History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
