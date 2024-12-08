@@ -25,6 +25,8 @@ git clone git@github.com:maxxiefjv/macbook-arch-dotfiles.git dotfiles
 cd dotfiles
 ```
 
+Add a background image at the location of `dotfiles/.config/background.png`
+
 Then use GNU stow to create all the symlinks
 ```
 stow .
