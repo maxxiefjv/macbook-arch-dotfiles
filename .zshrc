@@ -94,4 +94,5 @@ eval "$(zoxide init --cmd cd zsh)"
 if [[ -z "$PROFILE_SOURCED" ]]; then
 	source ~/.zprofile
 fi
-source ~/.zprofile
+
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
