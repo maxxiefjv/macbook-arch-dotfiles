@@ -95,4 +95,5 @@ if [[ -z "$PROFILE_SOURCED" ]]; then
 	source ~/.zprofile
 fi
 
-export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+
+export GPG_TTY=$(tty)

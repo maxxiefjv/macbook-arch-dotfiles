@@ -3,3 +3,8 @@
 [user]
 	email = vasterd97@gmail.com
 	name = Max Vasterd
+	signingkey = 9A65F4C6039CC8FD
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
